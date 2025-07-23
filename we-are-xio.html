@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>We are XIO</title>
+  <link rel="icon" type="image/ico" href="Images/favicon.ico" >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5uwOx33MfnPco6DL5uOIMTLy2FENzF4RJfI5xKw+IDUVAm1XOKR60TWPaEDgtR0CRj40edFFsQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .tab-section {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      border: 1px solid #d1d5db22;
+    }
+    .tab-title {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    .tab-link:hover .tab-title {
+      text-shadow: 0 0 10px hsl(48, 96%, 53%), 0 0 20px #facc15;
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: 20px;
+      right: 60px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+<header class="bg-white shadow">
+  <div class="w-full px-4">
+    <div class="flex justify-between h-20">
+      <div class="flex items-center justify-start">
+        <a href="indexcopy.html" class="flex-shrink-0">
+          <img src="Images/Transperant Dark full.png" alt="XIO Studios Logo" class="h-48 w-auto ml-0" />
+        </a>
+      </div>
+      <button id="menu-button" class="text-white focus:outline-none" aria-label="Open navigation menu">
+        <svg
+          class="h-12 w-12 text-gray-800"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div
+  id="menu-dropdown"
+  class="hidden absolute top-16 right-4 mt-2 w-72 bg-gray-900 shadow-lg rounded-md py-3 z-50"
+>
+  <a href="indexcopy.html" class="block px-6 py-3 text-lg text-white hover:bg-yellow-500 rounded">Home</a>
+
+  <!-- What We Do + Subpages -->
+  <a href="we-are-xio.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">We Are XIO</a>
+  <a href="literary-art.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Literary Art</a>
+  <a href="graphic-comics.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Graphic Comics</a>
+
+
+  <!-- Upcoming Projects + Subpages -->
+  <a href="upcoming-projects.html" class="block px-6 py-3 text-lg text-white hover:bg-[#821C2B] rounded">Upcoming Projects</a>
+  <a href="The-Mare-and-Colt.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ The Mare and Colt</a>
+  <a href="Pascual-Pierre.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Pascual Pierre</a>
+
+  <a href="stay-current.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">Stay Current</a>
+</div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menu-button').addEventListener('click', function () {
+    const dropdown = document.getElementById('menu-dropdown');
+    dropdown.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- Hero Image Banner Below Header -->
+    <section class="relative w-full h-[60vh] overflow-hidden">
+      <img src="Images/what-we-do.jpg" alt="Hero Banner" class="object-cover w-full h-full" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <h1 class="text-6xl font-bold text-white tracking-wide font-serif">We Are XIO</h1>
+      </div>
+    </section>
+
+<section class="bg-black py-28">
+  <div class="max-w-6xl mx-auto text-center px-6">
+    <h3 class="text-5xl md:text-6xl font-bold font-serif mb-10 text-yellow-400 leading-tight">
+      Creating Today’s, Tomorrow.
+    </h3>
+    <p class="text-gray-300 text-xl md:text-2xl leading-loose max-w-4xl mx-auto">
+      At XIO Studios, we believe storytelling is the heartbeat of humanity. But not just any storytelling, we're here for the original, the daring, the honest ones. We always say everyone has a story and an original one at that, so lets share it! NO MORE REMAKES OR LIVEACTION! 
+      NEW STORIES!!!  
+      <br /><br />
+      Starting with comics and literary art, we're building a legacy that scales to the silver screen all while staying rooted in authenticity, hard work, and passion. This is for the everyday visionaries who refuse to settle, who see ‘no’ as a challenge, and who are ready to push the entertainment industry into a whole new stratosphere.
+      <br /><br />
+      We are just at the beginning and have much more to go. But one thing we can promise is this. XIO Studios WILL be a name you know!
+    </p>
+  </div>
+</section>
+
+
+<style>
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.35; }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 7s ease-in-out infinite;
+  }
+</style>
+
+
+<!-- Behind the Scenes Carousel -->
+<section class="py-16 bg-[#111] text-white">
+  <h3 class="text-4xl font-bold font-serif text-center mb-10">Our Current Comic Process</h3>
+  <div class="overflow-x-auto whitespace-nowrap px-6">
+    <div class="inline-flex gap-6">
+      <!-- Slide 1 -->
+      <div class="relative min-w-[300px] sm:min-w-[400px] h-[250px] bg-cover bg-center rounded-xl shadow-lg" style="background-image: url('/Images/1stpp.png');">
+        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-sm p-4 rounded-b-xl"> Step 1: Story & Script </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="relative min-w-[300px] sm:min-w-[400px] h-[250px] bg-cover bg-center rounded-xl shadow-lg" style="background-image: url('Images/earlysketchpencil.JPEG');">
+        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-sm p-4 rounded-b-xl"> Step 2: Thumbnailing & Layout</div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="relative min-w-[300px] sm:min-w-[400px] h-[250px] bg-cover bg-center rounded-xl shadow-lg" style="background-image: url('Images/inkedversion.png');">
+        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-sm p-4 rounded-b-xl">Step 3: Drawing & Inking</div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="relative min-w-[300px] sm:min-w-[400px] h-[250px] bg-cover bg-center rounded-xl shadow-lg" style="background-image: url('Images/Pascual\ Cover_.png');">
+        <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-sm p-4 rounded-b-xl">Step 4: Coloring,Lettering & Final Edits</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Scrollable Image Section -->
+    <section class="relative bg-black h-[90vh] py-8 px-6 overflow-y-scroll flex flex-col sm:flex-row justify-center items-center gap-10">
+      <img src="Images/IMG_3276.png" alt="Character turnaround" class="max-w-[45%] w-full object-contain rounded-lg shadow-xl" />
+      <img src="Images/comicsketch.png" alt="Second Character Image" class="max-w-[45%] w-full object-contain rounded-lg shadow-xl" />
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </section>
+
+<!-- Mission Timeline Section -->
+<section class="bg-black py-20">
+  <h3 class="text-4xl font-bold text-center text-yellow-400 font-serif mb-16">Our Timeline So Far</h3>
+
+  <!-- Timeline Row -->
+  <div class="space-y-20 max-w-6xl mx-auto">
+
+    <!-- Timeline Item 1 -->
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2 transform -rotate-2 overflow-hidden rounded-xl shadow-lg">
+        <img src="Images/earlylogo.jpg" alt="Foundation" class="w-full h-auto object-cover" />
+      </div>
+      <div class="w-full md:w-1/2 text-left px-4">
+        <h4 class="text-3xl font-semibold mb-4 text-white">2019 – The Idea was Born</h4>
+        <p class="text-gray-300 text-lg">XIO Studios was founded by Fatima Deme, a devoted fan of cinema and the arts. The idea was born in the middle of a long-winded math lecture during her senior year of high school. While her classmates took notes, Fatima found herself sketching and scribbling stories, letting her mind drift far beyond the classroom.
+                                        That afternoon, a wave of ideas hit her worlds, characters, and emotions too vivid to ignore. She knew, then and there, she would build her own studio to bring them to life.
+                                        She started jotting down names: United Studios? No. Deme Studios? Nah. Xiomara Studios? Ehh...
+                                        And then it hit her. XIO Studios. Oh yeah!</p>
+      </div>
+    </div>
+
+    <!-- Timeline Item 2 -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+      <div class="w-full md:w-1/2 transform rotate-2 overflow-hidden rounded-xl shadow-lg">
+        <img src="Images/laika.png" alt="First Comic" class="w-full h-auto object-cover" />
+      </div>
+      <div class="w-full md:w-1/2 text-left px-4">
+        <h4 class="text-3xl font-semibold mb-4 text-white">2022 – Learning from the Greats</em></h4>
+        <p class="text-gray-300 text-lg">After high school, Fatima Deme dedicated the next few years to exploring, learning, and creating. She worked tirelessly out of her garage—writing screenplays and novels, composing music, and breathing life into a cast of original characters.
+                                          In February 2022, she began working at the one and only Laika Studios, a powerhouse in the animation industry known for its commitment to original storytelling and exquisite artistry, values she deeply shares. Her time there was transformative. 
+                                          She soaked in the beauty of true craftsmanship, observing how detail, patience, and what a studio that values storytelling was really like. </p>
+      </div>
+    </div>
+
+    <!-- Timeline Item 3 -->
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2 transform -rotate-1 overflow-hidden rounded-xl shadow-lg">
+        <img src="Images/oregon sketching.png" alt="Upcoming" class="w-full h-auto object-cover" />
+      </div>
+      <div class="w-full md:w-1/2 text-left px-4">
+        <h4 class="text-3xl font-semibold mb-4 text-white">2025 – The commension of the creativity</h4>
+        <p class="text-gray-300 text-lg">Now, it’s time to bring this collection of work to life. Fatima Deme is officially launching these stories, starting with comics, then expanding into animation, films, and so much more. At XIO Studios, we believe every story deserves the form that fits it best. Whether that’s a panel, a frame, or a full-length feature, we follow the story wherever it leads.
+                                          A Message from the Founder
+                                          “I just want tell amazing and honest stories. It’ll take time to get all these out but as long as we can share a story with the resources available to us we will tell them.”</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <footer class="bg-gray-900 mt-12 py-10 px-4 text-sm text-gray-400">
+    <div class="max-w-6xl mx-auto flex flex-col items-center space-y-6">
+      <p>&copy; 2025 XIO Studios. All rights reserved.</p>
+      <div class="flex flex-wrap justify-center space-x-4">
+        <a href="index.html" class="hover:text-yellow-500">Home</a>
+        <a href="we-are-xio.html" class="hover:text-yellow-500">Mission</a>
+        <a href="stay-current.html" class="hover:text-yellow-500">Contact</a>
+      </div>
+      <div class="flex flex-wrap justify-center space-x-3">
+  <a href="https://www.instagram.com/thexiostudios/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/instagram.png" alt="Instagram" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://x.com/XIOStudios" target="_blank" rel="noopener" aria-label="Twitter" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Twitter.png" alt="Twitter" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.youtube.com/channel/UCCy0ndUxJWhEBnk92iIo5Ug" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/YouTube.png" alt="YouTube" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.tiktok.com/@xiostudios" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/TikTok.png" alt="TikTok" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.linkedin.com/company/thexiostudios/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/LinkedIn.png" alt="LinkedIn" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.facebook.com/XI0official/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Facebook.png" alt="Facebook" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+</div>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pascual Pierre</title>
+  <link rel="icon" type="image/jpg" href="Images/favicon.jpg" >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5uwOx33MfnPco6DL5uOIMTLy2FENzF4RJfI5xKw+IDUVAm1XOKR60TWPaEDgtR0CRj40edFFsQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+    .tab-section {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      border: 1px solid #d1d5db22;
+    }
+    .tab-title {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    .tab-link:hover .tab-title {
+      text-shadow: 0 0 10px hsl(48, 96%, 53%), 0 0 20px #facc15;
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: 20px;
+      right: 60px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+<header class="bg-white shadow">
+  <div class="w-full px-4">
+    <div class="flex justify-between h-20">
+      <div class="flex items-center justify-start">
+        <a href="indexcopy.html" class="flex-shrink-0">
+          <img src="Images/Transperant Dark full.png" alt="XIO Studios Logo" class="h-48 w-auto ml-0" />
+        </a>
+      </div>
+      <button id="menu-button" class="text-white focus:outline-none" aria-label="Open navigation menu">
+        <svg
+          class="h-12 w-12 text-gray-800"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div
+  id="menu-dropdown"
+  class="hidden absolute top-16 right-4 mt-2 w-72 bg-gray-900 shadow-lg rounded-md py-3 z-50"
+>
+  <a href="indexcopy.html" class="block px-6 py-3 text-lg text-white hover:bg-yellow-500 rounded">Home</a>
+
+  <!-- What We Do + Subpages -->
+  <a href="we-are-xio.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">We Are XIO</a>
+  <a href="literary-art.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Literary Art</a>
+  <a href="graphic-comics.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Graphic Comics</a>
+
+
+  <!-- Upcoming Projects + Subpages -->
+  <a href="upcoming-projects.html" class="block px-6 py-3 text-lg text-white hover:bg-[#821C2B] rounded">Upcoming Projects</a>
+  <a href="The-Mare-and-Colt.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ The Mare and Colt</a>
+  <a href="Pascual-Pierre.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Pascual Pierre</a>
+
+  <a href="stay-current.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">Stay Current</a>
+</div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menu-button').addEventListener('click', function () {
+    const dropdown = document.getElementById('menu-dropdown');
+    dropdown.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- Banner Section -->
+  <section class="relative h-screen w-full bg-cover bg-center" style="background-image: url('Images/panel\ 4.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-6xl md:text-7xl font-bold text-white drop-shadow-lg tracking-wide">
+        Pascual Pierre
+      </h1>
+      <a href="literary-art.html" class="mt-6 inline-block bg-white text-black font-semibold px-6 py-3 rounded-full text-lg hover:bg-gray-200 transition duration-300">
+        Read Full Story
+      </a>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute top-[75%] w-full flex justify-center">
+      <a href="#comic1" class="animate-bounce text-white text-xl font-semibold">
+        ↓ Scroll Down
+      </a>
+    </div>
+  </section>
+
+  <!-- Comic Page 1 Section -->
+  <section id="comic1" class="w-full bg-white py-20 px-6 md:px-20 flex flex-col md:flex-row items-center gap-10 text-black">
+    <!-- Comic Image -->
+    <div class="w-full md:w-1/2">
+      <img src="Images/Panel 1.jpg" alt="Pascual Pierre Comic Page 1" class="w-full rounded-xl shadow-xl">
+    </div>
+
+    <!-- Description & Instagram Link -->
+    <div class="w-full md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4 text-gray-900">Comic Series</h2>
+      <p class="text-lg text-gray-700 mb-6">
+        Pascual wakes up to an eerie silence at the edge of the sea... something has changed. Read the weekly mystery unfold.
+      </p>
+      <a href="graphic-comics.html" target="_blank" class="inline-block bg-black text-white px-5 py-3 rounded-full font-semibold hover:bg-gray-800 transition duration-300">
+        View Comic
+      </a>
+    </div>
+  </section>
+
+<!-- Behind the Scenes Section -->
+<section class="w-full bg-gray-100 py-16 px-6 md:px-20 text-black">
+  <h2 class="text-4xl font-bold mb-8 text-gray-900">Character Development </h2>
+  <p class="mb-12 text-gray-700 max-w-3xl">
+    View all the different versions of Pascual. It took multiple trial and error but he ultimately came out just right!
+  </p>
+
+  <div class="flex space-x-16 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 py-4">
+    <!-- Item 1 -->
+    <div class="flex-shrink-0 w-96 bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+      <img src="Images/1stpp.png" alt="Early Character Sketch 1" class="rounded-lg mb-6 w-full object-cover h-60" />
+      <p class="text-gray-800 text-center text-base font-medium">First concept sketch, this was made in 2024.</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="flex-shrink-0 w-96 bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+      <img src="Images/2nd pp turn.png" alt="Early Character Sketch 2" class="rounded-lg mb-6 w-full object-cover h-60" />
+      <p class="text-gray-800 text-center text-base font-medium">Second Version of Pascual, more rounded, softer and worn down.</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="flex-shrink-0 w-96 bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+      <img src="Images/pp3.png" alt="Early Character Sketch 3" class="rounded-lg mb-6 w-full object-cover h-60" />
+      <p class="text-gray-800 text-center text-base font-medium">Exploring different poses and expressions.</p>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="flex-shrink-0 w-96 bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+      <img src="Images/pp4.png" alt="Early Character Sketch 4" class="rounded-lg mb-6 w-full object-cover h-60" />
+      <p class="text-gray-800 text-center text-base font-medium">Finalized character pose and style.</p>
+    </div>
+  </div>
+</section>
+
+  <script>
+    document.querySelector('a[href="#comic1"]').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('comic1').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+<footer class="bg-gray-900 mt-12 py-10 px-4 text-sm text-gray-400">
+    <div class="max-w-6xl mx-auto flex flex-col items-center space-y-6">
+      <p>&copy; 2025 XIO Studios. All rights reserved.</p>
+      <div class="flex flex-wrap justify-center space-x-4">
+        <a href="indexcopy.html" class="hover:text-yellow-500">Home</a>
+        <a href="we-are-xio.html" class="hover:text-yellow-500">Mission</a>
+        <a href="stay-current.html" class="hover:text-yellow-500">Contact</a>
+      </div>
+      <div class="flex flex-wrap justify-center space-x-3">
+  <a href="https://www.instagram.com/thexiostudios/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/instagram.png" alt="Instagram" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://x.com/XIOStudios" target="_blank" rel="noopener" aria-label="Twitter" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Twitter.png" alt="Twitter" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.youtube.com/channel/UCCy0ndUxJWhEBnk92iIo5Ug" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/YouTube.png" alt="YouTube" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.tiktok.com/@xiostudios" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/TikTok.png" alt="TikTok" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.linkedin.com/company/thexiostudios/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/LinkedIn.png" alt="LinkedIn" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.facebook.com/XI0official/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Facebook.png" alt="Facebook" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+</div>
+
+  </footer>
+</body>
+</html>

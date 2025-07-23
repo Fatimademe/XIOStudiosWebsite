@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Graphic Comics</title>
+  <link rel="icon" type="image/ico" href="Images/favicon.ico" >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5uwOx33MfnPco6DL5uOIMTLy2FENzF4RJfI5xKw+IDUVAm1XOKR60TWPaEDgtR0CRj40edFFsQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .tab-section {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      border: 1px solid #d1d5db22;
+    }
+    .tab-title {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    .tab-link:hover .tab-title {
+      text-shadow: 0 0 10px hsl(48, 96%, 53%), 0 0 20px #facc15;
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: 20px;
+      right: 60px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+<header class="bg-white shadow">
+  <div class="w-full px-4">
+    <div class="flex justify-between h-20">
+      <div class="flex items-center justify-start">
+        <a href="indexcopy.html" class="flex-shrink-0">
+          <img src="Images/Transperant Dark full.png" alt="XIO Studios Logo" class="h-48 w-auto ml-0" />
+        </a>
+      </div>
+      <button id="menu-button" class="text-white focus:outline-none" aria-label="Open navigation menu">
+        <svg
+          class="h-12 w-12 text-gray-800"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div
+  id="menu-dropdown"
+  class="hidden absolute top-16 right-4 mt-2 w-72 bg-gray-900 shadow-lg rounded-md py-3 z-50"
+>
+  <a href="indexcopy.html" class="block px-6 py-3 text-lg text-white hover:bg-yellow-500 rounded">Home</a>
+
+  <!-- What We Do + Subpages -->
+  <a href="we-are-xio.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">We Are XIO</a>
+  <a href="literary-art.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Literary Art</a>
+  <a href="graphic-comics.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Graphic Comics</a>
+
+
+  <!-- Upcoming Projects + Subpages -->
+  <a href="upcoming-projects.html" class="block px-6 py-3 text-lg text-white hover:bg-[#821C2B] rounded">Upcoming Projects</a>
+  <a href="The-Mare-and-Colt.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ The Mare and Colt</a>
+  <a href="Pascual-Pierre.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Pascual Pierre</a>
+
+  <a href="stay-current.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">Stay Current</a>
+</div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menu-button').addEventListener('click', function () {
+    const dropdown = document.getElementById('menu-dropdown');
+    dropdown.classList.toggle('hidden');
+  });
+</script>
+    
+<!-- Banner -->
+<section class="bg-[#1a1a1a] text-center text-white py-20 px-6">
+  <h1 class="text-5xl md:text-7xl font-bold tracking-wide mb-4">Graphic Comics </h1>
+  <p class="text-xl md:text-2xl italic text-[#cccccc]">Where words conjure worlds.</p>
+</section>
+    
+<!-- Graphic Comic Section -->
+<section class="bg-[#141414] text-white px-6 py-12 md:px-24">
+  <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center md:text-left">"Pascual Pierre" by XIO Studios 2025</h2>
+
+  <div class="flex flex-col md:flex-row gap-8 items-start">
+    <!-- Comic Thumbnail -->
+    <div class="w-full md:w-[200px] shrink-0">
+      <img src="Images/Pascual Cover_.png" alt="Comic cover" class="rounded-lg shadow-md w-full object-cover">
+    </div>
+
+    <!-- Description + Button -->
+    <div class="flex-1">
+      <p class="text-base md:text-lg text-[#cccccc] mb-4">
+        Walk into the haunting tale, of our old,long friend who was once to be oh so great in the world. <em>Pascaul Pierre</em> — the horrors of the undone, of the unloved.
+      </p>
+      <button onclick="document.getElementById('comicModal1').classList.remove('hidden')" class="px-5 py-2 bg-white text-black font-medium rounded hover:bg-gray-200 transition">
+        View Comic
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Comic Modal -->
+<div id="comicModal1" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
+  <div class="bg-white text-black w-[95%] md:w-full max-w-5xl h-[90vh] overflow-hidden rounded-xl relative flex flex-col items-center p-4 shadow-2xl">
+
+    <!-- Close Button -->
+    <button onclick="document.getElementById('comicModal1').classList.add('hidden')" 
+            class="absolute top-4 right-4 text-4xl font-bold text-black hover:text-gray-700 z-50">
+      &times;
+    </button>
+
+    <!-- Comic Pages Container -->
+    <div id="comicPages" class="flex-1 flex items-center justify-center w-full overflow-hidden">
+      <img id="comicPageImg" 
+           src="Images/PASCUAL PIERRE PAGE 1.JPG" 
+           class="max-h-full max-w-full object-contain transition duration-300 ease-in-out" 
+           alt="Comic page">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="mt-4 flex gap-4 justify-center items-center">
+      <button onclick="prevPage()" 
+              class="px-4 py-2 bg-gray-300 hover:bg-gray-400 text-black font-medium rounded">
+        ← Prev
+      </button>
+      <span id="pageCounter" class="text-lg font-semibold">Page 1</span>
+      <button onclick="nextPage()" 
+              class="px-4 py-2 bg-gray-300 hover:bg-gray-400 text-black font-medium rounded">
+        Next →
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // SVG placeholder: black background with yellow "Coming Soon" text
+  const comingSoonPlaceholder = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDYwMCA4MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9ImJsYWNrIi8+PHRleHQgeD0iNTAlIiB5PSI1MCIgZmlsbD0ieWVsbG93IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDgiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkNvbWluZyBTb29uPC90ZXh0Pjwvc3ZnPg==";
+
+  const comicPages = [
+    "Images/PASCUAL PIERRE PAGE 1.JPG",
+    comingSoonPlaceholder,
+    comingSoonPlaceholder
+  ];
+
+  let currentPage = 0;
+
+  function updateComicPage() {
+    const img = document.getElementById("comicPageImg");
+    const counter = document.getElementById("pageCounter");
+    img.src = comicPages[currentPage];
+    counter.innerText = `Page ${currentPage + 1}`;
+  }
+
+  function nextPage() {
+    if (currentPage < comicPages.length - 1) {
+      currentPage++;
+      updateComicPage();
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 0) {
+      currentPage--;
+      updateComicPage();
+    }
+  }
+
+  // Close modal if click outside image container
+  document.getElementById("comicModal1").addEventListener("click", function (e) {
+    if (e.target === this) {
+      this.classList.add("hidden");
+    }
+  });
+</script>
+
+
+  <footer class="bg-gray-900 mt-12 py-10 px-4 text-sm text-gray-400">
+    <div class="max-w-6xl mx-auto flex flex-col items-center space-y-6">
+      <p>&copy; 2025 XIO Studios. All rights reserved.</p>
+      <div class="flex flex-wrap justify-center space-x-4">
+        <a href="indexcopy.html" class="hover:text-yellow-500">Home</a>
+        <a href="we-are-xio.html" class="hover:text-yellow-500">Mission</a>
+        <a href="stay-current.html" class="hover:text-yellow-500">Contact</a>
+      </div>
+      <div class="flex flex-wrap justify-center space-x-3">
+  <a href="https://www.instagram.com/thexiostudios/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/instagram.png" alt="Instagram" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://x.com/XIOStudios" target="_blank" rel="noopener" aria-label="Twitter" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Twitter.png" alt="Twitter" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.youtube.com/channel/UCCy0ndUxJWhEBnk92iIo5Ug" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/YouTube.png" alt="YouTube" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.tiktok.com/@xiostudios" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/TikTok.png" alt="TikTok" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.linkedin.com/company/thexiostudios/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/LinkedIn.png" alt="LinkedIn" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.facebook.com/XI0official/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Facebook.png" alt="Facebook" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+</div>
+
+  </footer>
+</body>
+</html>

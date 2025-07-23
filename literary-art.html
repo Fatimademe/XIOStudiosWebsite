@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Literary Arts</title>
+  <link rel="icon" type="image/ico" href="Images/favicon.ico" >
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUQs5uwOx33MfnPco6DL5uOIMTLy2FENzF4RJfI5xKw+IDUVAm1XOKR60TWPaEDgtR0CRj40edFFsQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .tab-section {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      position: relative;
+      border: 1px solid #d1d5db22;
+    }
+    .tab-title {
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    .tab-link:hover .tab-title {
+      text-shadow: 0 0 10px hsl(48, 96%, 53%), 0 0 20px #facc15;
+    }
+    .bottom-right {
+      position: absolute;
+      bottom: 20px;
+      right: 60px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+
+<header class="bg-white shadow">
+  <div class="w-full px-4">
+    <div class="flex justify-between h-20">
+      <div class="flex items-center justify-start">
+        <a href="indexcopy.html" class="flex-shrink-0">
+          <img src="Images/Transperant Dark full.png" alt="XIO Studios Logo" class="h-48 w-auto ml-0" />
+        </a>
+      </div>
+      <button id="menu-button" class="text-white focus:outline-none" aria-label="Open navigation menu">
+        <svg
+          class="h-12 w-12 text-gray-800"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div
+  id="menu-dropdown"
+  class="hidden absolute top-16 right-4 mt-2 w-72 bg-gray-900 shadow-lg rounded-md py-3 z-50"
+>
+  <a href="indexcopy.html" class="block px-6 py-3 text-lg text-white hover:bg-yellow-500 rounded">Home</a>
+
+  <!-- What We Do + Subpages -->
+  <a href="we-are-xio.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">We Are XIO</a>
+  <a href="literary-art.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Literary Art</a>
+  <a href="graphic-comics.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Graphic Comics</a>
+
+
+  <!-- Upcoming Projects + Subpages -->
+  <a href="upcoming-projects.html" class="block px-6 py-3 text-lg text-white hover:bg-[#821C2B] rounded">Upcoming Projects</a>
+  <a href="The-Mare-and-Colt.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ The Mare and Colt</a>
+  <a href="Pascual-Pierre.html" class="block px-10 py-2 text-base text-white hover:text-yellow-400">⬤ Pascual Pierre</a>
+
+  <a href="stay-current.html" class="block px-6 py-3 text-lg text-white hover:bg-[#7A3C91] rounded">Stay Current</a>
+</div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menu-button').addEventListener('click', function () {
+    const dropdown = document.getElementById('menu-dropdown');
+    dropdown.classList.toggle('hidden');
+  });
+</script>
+
+  <body class="bg-[#0d0d0d]">
+    
+<!-- Banner -->
+<section class="bg-[#1a1a1a] text-center text-white py-20 px-6">
+  <h1 class="text-5xl md:text-7xl font-bold tracking-wide mb-4">Literary Arts</h1>
+  <p class="text-xl md:text-2xl italic text-[#cccccc]">Where words conjure worlds.</p>
+</section>
+
+<!-- Poem Section: Smaller Image + Full Modal -->
+<section class="bg-[#141414] text-white px-6 py-12 md:px-24">
+  <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center md:text-left">"Pascual Pierre" by Fatima Deme</h2>
+
+  <div class="flex flex-col md:flex-row gap-8 items-start">
+    <!-- Smaller Image -->
+    <div class="w-full md:w-[200px] shrink-0">
+      <img src="Images/Pascual Cover_.png" alt="Poem artwork" class="rounded-lg shadow-md w-full object-cover">
+    </div>
+
+    <!-- Text Preview -->
+    <div class="flex-1">
+      <p class="text-base md:text-lg text-[#cccccc] mb-4">
+        Pascual Pierre roamed his halls<br>
+        Turning every corner, banging on every wall.<br>
+        For once again it commences...
+      </p>
+      <button onclick="document.getElementById('poemModal1').classList.remove('hidden')" class="px-5 py-2 bg-white text-black font-medium rounded hover:bg-gray-200 transition">
+        Read Full Poem
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Full Poem -->
+<div id="poemModal1" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+  <div class="bg-white text-black max-w-4xl max-h-[80vh] overflow-y-auto rounded-xl p-6 shadow-2xl relative">
+    <button onclick="document.getElementById('poemModal1').classList.add('hidden')" class="absolute top-4 right-4 text-xl font-bold hover:text-gray-700">&times;</button>
+    <h3 class="text-2xl font-bold mb-4">"Pascual Pierre" by Fatima Deme</h3>
+    <pre class="whitespace-pre-wrap text-lg leading-relaxed font-serif">
+
+Pascaul Pierre roamed his halls
+Turning every corner, banging on every wall.
+For once again it commences
+Those torturing cries
+Those countless whispers
+Those ceaseless whines. 
+
+The voices rise:
+“Won't you give us life?” 
+“Have you no soul, why must you leave us behind?”
+“Stop your useless painting and hear our sighs!”
+
+The whines fade back into the shadows
+And Pascual resumes his work, 
+Madness growing in his eyes 
+He paints and paints away
+Coating every bristle with a deep, black paint.
+
+Pascaul Pierre must hurry
+For the gallery will be held 
+At precisely a quarter past three.
+He will display his first ever piece 
+The room falls silent, 
+And, Pascual proud as can be 
+Continues his masterpiece. 
+
+With every stroke upon the canvas 
+His old, boney fingers begin to strain 
+Too slow, too stiff,  yet he still paints away
+Pushing through the pain 
+Trudging through the fear of his old ways.
+
+Anchors weigh down his hands
+He grows weak. 
+Doubts begin to race his mind: 
+“I'm a fool this isn't strong enough to be seen”
+“For the world will laugh and gawk at me”
+
+He banishes them 
+“No more doubt. I must finish you, my dear . 
+You must reap the rewards of all my failed years 
+
+The clock now reads a quarter till three.
+Pascaul in awe, dropped to his knees.
+Years of pain, of torment,
+Erased in this one piece.
+
+“The world will see me at last”
+“After seventy years, I finally understand”
+“I am not a failed man"
+“The world will for once see all that I am”
+
+His joyful tears begin to pour, 
+But his weeping soon drowns in a familiar roar.
+They have returned
+Angrier than ever before 
+
+“How dare you Pascual!” voices cry
+Trembling through the walls. 
+The house shudders with a shivering wail.
+So loud and fierce, it could make a cat straighten its tail. 
+
+He stumbles, clutching his painting.
+“I must flee”.
+For the spirits are coming after me”
+“Leave me alone!” he shouts.
+“I must go,
+ I must be known.” 
+“Today is finally the day, we have been waiting for”
+
+“Behold me you aching spirits
+I'm old, unloved, unknown and decrepit  
+Not a soul knows my name. 
+Enough with the torment won't you for once let me be great”.
+
+He tugs on the knob,
+But it is locked from the outside.
+Laughter echoed, crude and wide
+The cellar door creaks open
+A voice emerged, cold and steep 
+Sending a shiver down his spine.
+Knocking him off his feet.
+
+“Pascal Pierre,time has run out
+You gave us naught.
+We died unseen, unloved, forgot. 
+You must now stay, your fate is sealed 
+You will die with us now 
+Among the works you left concealed”.
+
+Pascal's nails dig into the floorboards
+Feet kicking, gripping, clawing for more time 
+Fear rushes through his eyes 
+As the horrid fear comes alive 
+He will die with his work, there he’ll lie 
+He prays for one more chance
+But the darkness pulls him deep down inside 
+
+There he lies
+His regretful lifeless eyes 
+Surrounded by the corpses of castaway paintings
+Never getting to see the light of day, banished, thrown away
+Never good enough. 
+Never the one.
+Always rejected, always undone.
+
+And there, beside his twisted corpse,
+Lies his first finished piece 
+The boy, alone in the blackness of a life of failure and defeat
+Empty. Abandoned.
+Like Pascaul Pieerre’s soul 
+Forgotten, forevermore.
+Bound to his broken dreams, eternally forlorn.
+    </pre>
+  </div>
+</div>
+
+<!-- Coming Soon Banner -->
+<section class="bg-[#2e2e2e] text-center py-20">
+  <h2 class="text-3xl md:text-5xl font-bold text-white">More to come. Stay tuned.</h2>
+</section>
+
+
+
+  <footer class="bg-gray-900 mt-12 py-10 px-4 text-sm text-gray-400">
+    <div class="max-w-6xl mx-auto flex flex-col items-center space-y-6">
+      <p>&copy; 2025 XIO Studios. All rights reserved.</p>
+      <div class="flex flex-wrap justify-center space-x-4">
+        <a href="indexcopy.html" class="hover:text-yellow-500">Home</a>
+        <a href="we-are-xio.html" class="hover:text-yellow-500">Mission</a>
+        <a href="stay-current.html" class="hover:text-yellow-500">Contact</a>
+      </div>
+      <div class="flex flex-wrap justify-center space-x-3">
+  <a href="https://www.instagram.com/thexiostudios/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/instagram.png" alt="Instagram" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://x.com/XIOStudios" target="_blank" rel="noopener" aria-label="Twitter" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Twitter.png" alt="Twitter" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.youtube.com/channel/UCCy0ndUxJWhEBnk92iIo5Ug" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/YouTube.png" alt="YouTube" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.tiktok.com/@xiostudios" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/TikTok.png" alt="TikTok" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.linkedin.com/company/thexiostudios/?viewAsMember=true" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/LinkedIn.png" alt="LinkedIn" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+  <a href="https://www.facebook.com/XI0official/" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-white transition-all duration-300 group">
+    <img src="Images/Facebook.png" alt="Facebook" class="w-50 h-50 group-hover:grayscale-0 grayscale transition-all duration-300" />
+  </a>
+</div>
+
+  </footer>
+</body>
+</html>
